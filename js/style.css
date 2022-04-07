@@ -1,0 +1,47 @@
+body{
+    background-image: url("background/picture2.jpg");
+    display: flex;
+    justify-content: center;
+    background-size: 100%;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.key{
+    height:calc(var(--width)*4);
+    width: var(--width);
+    border: black solid 2px;
+    border-radius: 10px;
+
+}
+
+.piano{
+    display: flex;
+    border: solid gray 10px;
+    border-radius: 10px;
+}
+
+.white{
+    display: flex;
+    background-color: white;
+    border: solid black 0.7px;
+    --width:100px;
+    
+}
+
+.black{
+    display: flex;
+    background-color: black;
+    --width: 55px;
+    margin-left: calc(var(--width)/-2);
+    margin-right:calc(var(--width)/-2);
+    z-index: 2;
+}
+
+.white.active{
+     background-color: rgb(110, 102, 102);
+}
+
+.black.active{
+    background-color:rgb(128, 122, 122);
+}
